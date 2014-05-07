@@ -13,7 +13,16 @@ App.IndexRoute = Ember.Route.extend({
 });
 
 App.IndexController = Ember.ObjectController.extend({
-    subredditHeader: 'aww'
+    subredditHeader: 'aww',
+    loadList: function() {
+        // try subreddit with these names: cute, aww
+        var value = this.get('subreddit');
+        if(value){
+            this.set('subredditHeader', value);
+            this.set('model', App.RedditLink.findAll(value));
+            this.set('subreddit', '');
+        }
+    }
 });
 
 App.RedditLink = Ember.Object.extend({
