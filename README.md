@@ -1,10 +1,10 @@
 ### Learn Ember JS
 
-This is a demo app that used in 'Ember for Beginner'
+This is a demo app that used in 'Ember for Beginner', which used webstorm8
 
 ### Remeber Ember architecture
 
-![](http://i61.tinypic.com/23ljer.png) 
+![](http://i61.tinypic.com/23ljer.png)
 
 ### Useful resources
 
